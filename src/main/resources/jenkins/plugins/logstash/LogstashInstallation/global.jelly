@@ -21,5 +21,9 @@
       <f:textbox value="${descriptor.key}" default="logstash"
         checkUrl="'descriptorByName/LogstashInstallation/checkString?value='+escape(this.value)" />
     </f:entry>
+    <f:entry title="${%Zmqprefix}" field="zmqprefix">
+      <f:textarea value="${descriptor.zmqprefix}" default="logstash"
+        checkUrl="'descriptorByName/LogstashInstallation/checkString?value='+escape(this.value)" class="my-groovy-textbox"/>
+    </f:entry> 
   </f:section>
 </j:jelly>

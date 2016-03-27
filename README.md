@@ -1,3 +1,19 @@
+EXPERIMENTAL Jenkins Logstash Plugin FORK
+=========================================
+
+in order to test ZeroMQ log-publishing. To test:
+
+* mvn hpi:run
+* create some test-job and tick the zmq-publishing inside the job-configuration
+* configure the "zmq-prefix" (reasonable example in the documentation)"
+* install the dependencies of zmqsubscriber.rb
+* Start zmqsubscriber.rb
+* Start the job
+
+Loadtesting-jobs can be imported via scm-syn-plugin and
+https://github.com/k9ert/zmq-plugin-perftest-jenkins-config.git
+
+
 Jenkins Logstash Plugin
 =======================
 
